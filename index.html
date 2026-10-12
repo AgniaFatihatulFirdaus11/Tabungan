@@ -3,15 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Target Tabungan</title>
+<title>Tabungin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <h1>Target tabungan</h1>
+  <h1>Target Tabungan</h1>
   <p class="sub">Catat setoran, progress langsung diperbarui.</p>
+
+  <div class="summary" id="summary"></div>
 
   <form class="new-goal" id="goalForm">
     <div class="wide">
@@ -31,6 +33,8 @@
 
   <section id="goals" aria-live="polite"></section>
 </main>
+
+<div class="toast" id="toast" role="status"></div>
 
 <script src="index.js"></script>
 </body>
