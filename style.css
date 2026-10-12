@@ -146,6 +146,46 @@ ul.history li { display: flex; justify-content: space-between; align-items: cent
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.brand:focus-visible {
+  outline: 3px solid var(--coin);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
 @media (max-width: 480px) {
   form.new-goal { grid-template-columns: 1fr; }
   .summary { grid-template-columns: 1fr; }
