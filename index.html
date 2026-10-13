@@ -3,49 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tabungin</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>Tabungin: catat target tabungan, pantau progress-nya</title>
+<meta name="description" content="Tabungin membantu kamu mencatat target tabungan dan melihat progress-nya langsung.">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0A0A0C">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="navbar-inner">
-      <a href="./" class="brand" aria-label="Tabungin">
-        <img class="logo" src="icon-192.png" alt="" width="36" height="36">
-        <span class="brand-name">Tabungin</span>
-      </a>
-    </div>
-  </header>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="./" class="brand" aria-label="Tabungin">
+      <img src="icon-192.png" alt="" width="36" height="36">
+      <span>Tabungin</span>
+    </a>
+    <a class="btn" href="app.html">Buka aplikasi</a>
+  </div>
+</header>
+
 <main>
-  <h1>Target Tabungan</h1>
-  <p class="sub">Catat setoran, progress langsung diperbarui.</p>
-
-  <div class="summary" id="summary"></div>
-
-  <form class="new-goal" id="goalForm">
-    <div class="wide">
-      <label for="gName">Nama target</label>
-      <input id="gName" required maxlength="60" placeholder="Contoh: Laptop baru">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>Nabung jadi lebih jelas, targetnya makin dekat.</h1>
+      <p>Catat target tabunganmu, setor kapan saja, dan lihat progress-nya naik langsung di layar.</p>
+      <div class="cta">
+        <a class="btn btn-lg" href="app.html">Mulai menabung</a>
+        <a class="link" href="#fitur">Lihat fitur</a>
+      </div>
     </div>
-    <div>
-      <label for="gTarget">Nominal target (Rp)</label>
-      <input id="gTarget" type="number" min="1" required placeholder="10000000">
-    </div>
-    <div>
-      <label for="gDeadline">Tenggat (opsional)</label>
-      <input id="gDeadline" type="date">
-    </div>
-    <div class="wide"><button type="submit">Buat target</button></div>
-  </form>
+    <img class="hero-img" src="icon-512.png" alt="Maskot ayam celengan Tabungin" width="320" height="320">
+  </section>
 
-  <section id="goals" aria-live="polite"></section>
+  <section id="fitur" class="wrap section">
+    <h2>Semua yang kamu butuhkan untuk menabung</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Banyak target sekaligus</h3>
+        <p>Laptop, gitar, liburan: buat target sebanyak yang kamu mau, masing-masing punya progress sendiri.</p>
+      </article>
+      <article class="card">
+        <h3>Progress langsung terlihat</h3>
+        <p>Setiap setoran langsung mengubah bar, persentase, dan sisa yang harus dikumpulkan.</p>
+      </article>
+      <article class="card">
+        <h3>Estimasi per bulan</h3>
+        <p>Pasang tenggat, dan Tabungin menghitung berapa yang perlu kamu sisihkan tiap bulan.</p>
+      </article>
+      <article class="card">
+        <h3>Pasang di HP</h3>
+        <p>Bisa dipasang seperti aplikasi biasa dan dipakai tanpa internet. Tanpa daftar akun.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <h2>Cara pakainya</h2>
+    <ol class="steps">
+      <li><b>1</b><div><h3>Buat target</h3><p>Isi nama, nominal, dan tenggat (opsional).</p></div></li>
+      <li><b>2</b><div><h3>Catat setoran</h3><p>Setor atau tarik kapan pun, semuanya tercatat di riwayat.</p></div></li>
+      <li><b>3</b><div><h3>Pantau progress</h3><p>Lihat seberapa dekat kamu dengan targetnya.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="wrap">
+    <div class="final">
+      <h2>Siap mulai menabung?</h2>
+      <p>Buat target pertamamu sekarang.</p>
+      <a class="btn btn-lg" href="app.html">Buka Tabungin</a>
+    </div>
+  </section>
 </main>
 
-<div class="toast" id="toast" role="status"></div>
+<footer class="footer wrap">
+  <span>© 2026 Tabungin</span>
+</footer>
 
-<script src="index.js"></script>
 </body>
 </html>

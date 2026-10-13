@@ -2,7 +2,7 @@
     "name": "Tabungin",
     "short_name": "Tabungin",
     "description": "Catat target tabungan dan pantau progress-nya.",
-    "start_url": "./",
+    "start_url": "app.html",
     "scope": "./",
     "display": "standalone",
     "orientation": "portrait",

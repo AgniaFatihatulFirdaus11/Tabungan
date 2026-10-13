@@ -1,8 +1,10 @@
-const CACHE = "tabungin-v3";
+const CACHE = "tabungin-v4";
 const FILES = [
   "./",
   "index.html",
+  "app.html",
   "style.css",
+  "landing.css",
   "index.js",
   "manifest.json",
   "icon-192.png",

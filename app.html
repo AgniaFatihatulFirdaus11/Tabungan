@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabungin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0A0A0C">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="./" class="brand" aria-label="Tabungin">
+        <img class="logo" src="icon-192.png" alt="" width="36" height="36">
+        <span class="brand-name">Tabungin</span>
+      </a>
+    </div>
+  </header>
+<main>
+  <h1>Target Tabungan</h1>
+  <p class="sub">Catat setoran, progress langsung diperbarui.</p>
+
+  <div class="summary" id="summary"></div>
+
+  <form class="new-goal" id="goalForm">
+    <div class="wide">
+      <label for="gName">Nama target</label>
+      <input id="gName" required maxlength="60" placeholder="Contoh: Laptop baru">
+    </div>
+    <div>
+      <label for="gTarget">Nominal target (Rp)</label>
+      <input id="gTarget" type="number" min="1" required placeholder="10000000">
+    </div>
+    <div>
+      <label for="gDeadline">Tenggat (opsional)</label>
+      <input id="gDeadline" type="date">
+    </div>
+    <div class="wide"><button type="submit">Buat target</button></div>
+  </form>
+
+  <section id="goals" aria-live="polite"></section>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
